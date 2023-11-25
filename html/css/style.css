@@ -32,6 +32,8 @@ src: url("../fonts/Lato-Regular.ttf");
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
+    padding: 0;
+    margin: 0;
      box-sizing: border-box !important;
      transition: ease all 0.5s;
 }
@@ -215,8 +217,9 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
-     padding-bottom: 0px;
+     padding-top: 90px; 
+     /* padding-bottom: 20px; */
+     /* padding-right:30px; */
 }
 
 .padding_0{
@@ -228,12 +231,16 @@ button {
     float: left;
 }
 .navbar {
-    padding: 20px 30px;
+    padding: 20px 20px;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 10px;
     padding-left: 10px;
     font-size: 18px;
+
+}
+.navbar-nav{
+    margin-left: 100px;
 }
 .bg-light {
     background-color: #fefeff !important;
@@ -257,7 +264,7 @@ button {
     float: left;
     background-image: url(../images/banner-bg.png);
     height: auto;
-    padding-bottom: 200px;
+    padding-bottom: 0px;
     background-size: cover;
 }
 .image_1 {
@@ -293,7 +300,10 @@ button {
     margin-left: 0px;
     padding-top: 50px;
 }
-
+.banner_text_3{
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+}
 .shop_bt {
     width: 35%;
     float: left;
@@ -346,7 +356,7 @@ button {
 .about_section{
     width: 100%;
     float: left;
-    background-color: #f2f7fd;
+    background-color: #fff;
     height: auto;
     padding-bottom: 90px;
 }
@@ -373,9 +383,9 @@ button {
     font-size: 16px;
     color: #2d343e;
     margin-left: 0px;
-    text-align: right;
+    text-align: left;
     text-wrap: wrap;
-    /* overflow: auto; */
+    overflow: hidden;
 }
 .shop_bt_2 {
     width: 35%;
@@ -403,6 +413,7 @@ button {
 .product_section{
     width: 100%;
     float: left;
+    background-color: #f2f7fd;
 }
 .product_section_2 {
     width: 100%;
@@ -478,9 +489,10 @@ button {
 .video_section{
     width: 100%;
     float: left;
-    background-image: url(../images/video-bg.png);
+    background: #2c333d ;
     height: auto;
-    margin-top: 90px;
+    margin-top: 50px;
+    padding-bottom: 40px;
 }
 
 .video_text_2{
@@ -822,7 +834,12 @@ button {
 
 /* my changes */
 .svg-wave {
-	position: absolute;
+	/* position: ; */
 	bottom: 0;
 	width: 100%;
+}
+/* custom css */
+.custom-bg{
+    background-color: #2c333d; border: 3px linear #599ee9;
+    
 }
